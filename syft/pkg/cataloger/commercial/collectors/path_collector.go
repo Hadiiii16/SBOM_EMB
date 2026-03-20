@@ -3,7 +3,6 @@ package collectors
 import (
 	"context"
 	"path/filepath"
-	"strings"
 
 	"github.com/anchore/syft/syft/file"
 	"github.com/anchore/syft/syft/pkg/cataloger/commercial"
@@ -38,11 +37,14 @@ func (c *PathCollector) Collect(ctx context.Context, resolver file.Resolver) ([]
 		if p == "" {
 			p = loc.AccessPath
 		}
+
+		// normalizePath는 같은 패키지의 file_text_collector.go에 정의된 것을 공유합니다.
 		p = normalizePath(p)
 		if p == "" || p == "." {
 			continue
 		}
 
+		// 1. 전체 경로 증거 추가
 		out = append(out, commercial.CollectedEvidence{
 			Type:       commercial.EvidenceTypePath,
 			Location:   p,
@@ -52,6 +54,7 @@ func (c *PathCollector) Collect(ctx context.Context, resolver file.Resolver) ([]
 			Confidence: 0,
 		})
 
+		// 2. 파일명(basename) 증거 추가
 		base := filepath.Base(p)
 		if base != "" && base != "." && base != "/" {
 			out = append(out, commercial.CollectedEvidence{
@@ -66,17 +69,6 @@ func (c *PathCollector) Collect(ctx context.Context, resolver file.Resolver) ([]
 	}
 
 	return out, nil
-}
-
-func normalizePath(p string) string {
-	p = filepath.ToSlash(p)
-	if p == "" {
-		return ""
-	}
-	if !strings.HasPrefix(p, "/") {
-		p = "/" + p
-	}
-	return filepath.Clean(p)
 }
 
 var _ commercial.EvidenceCollector = (*PathCollector)(nil)

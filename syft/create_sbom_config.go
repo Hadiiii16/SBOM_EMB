@@ -5,7 +5,6 @@ import (
 	"errors"
 	"fmt"
 	"runtime/debug"
-	"strings"
 
 	"github.com/anchore/syft/internal/log"
 	"github.com/anchore/syft/internal/task"
@@ -13,13 +12,13 @@ import (
 	"github.com/anchore/syft/syft/cataloging/filecataloging"
 	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
 	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg/cataloger/commercial" // 이제 사용됨
+	"github.com/anchore/syft/syft/pkg/cataloger/commercial"
+	"github.com/anchore/syft/syft/pkg/cataloger/commercial/collectors"
 	"github.com/anchore/syft/syft/pkg/cataloger/firmware"
 	"github.com/anchore/syft/syft/sbom"
 	"github.com/anchore/syft/syft/source"
 )
 
-// CreateSBOMConfig specifies all parameters needed for creating an SBOM.
 type CreateSBOMConfig struct {
 	Compliance         cataloging.ComplianceConfig
 	Search             cataloging.SearchConfig
@@ -55,19 +54,45 @@ func DefaultCreateSBOMConfig() *CreateSBOMConfig {
 		ToolVersion:          syftVersion(),
 	}
 
-	// 커스텀 카탈로거 강제 주입
+	// [🔥 마법의 코드 추가 🔥] 
+	// Syft가 중복 파일 소유권을 핑계로 패키지를 무단 삭제하는 것을 원천 차단합니다!
+	cfg.Relationships.ExcludeBinaryPackagesWithFileOwnershipOverlap = false
+
+	// 1. Commercial 규칙 파일 경로 (에러 방지를 위해 절대 경로를 가장 먼저 시도)
+	rulePath := "/home/ktdevice/syft/syft/pkg/cataloger/commercial/rules/qualcomm-embedded.yaml"
+	ruleSet, err := commercial.LoadRuleSetFromFile(rulePath)
+
+	var commCataloger *commercial.Cataloger
+    if err != nil {
+        log.Warnf("Commercial rules not loaded from absolute path, trying relative: %v", err)
+        // 상대 경로로 재시도
+        ruleSet, err = commercial.LoadRuleSetFromFile("syft/pkg/cataloger/commercial/rules/qualcomm-embedded.yaml")
+    }
+
+    if err != nil {
+        log.Errorf("CRITICAL: Failed to load commercial rules: %v", err)
+        commCataloger = commercial.NewCataloger(nil)
+    } else {
+        log.Infof("Commercial cataloger successfully loaded with %d products", len(ruleSet.Products))
+        commCataloger = commercial.NewCataloger(
+            ruleSet.Products,
+            
+            // 👇 바로 이 부분을 아래처럼 바꿉니다! 👇
+            collectors.NewFileTextCollector("Qualcomm", "QMI", "modem", "wifi", "ath11k", "ath10k", "cnss", "rmnet", "mhi"),
+            
+            collectors.NewPathCollector(),
+        )
+    }
+
+	// 2. 커스텀 카탈로거 주입 (AlwaysEnabled 설정)
 	cfg.WithCatalogers(
-		// 1. Firmware 카탈로거
 		pkgcataloging.CatalogerReference{
 			Cataloger:     firmware.NewCataloger(),
 			Tags:          []string{pkgcataloging.PackageTag, pkgcataloging.ImageTag, pkgcataloging.DirectoryTag},
 			AlwaysEnabled: true,
 		},
-		// 2. Commercial 카탈로거 추가 (import 에러 해결 및 기능 활성화)
 		pkgcataloging.CatalogerReference{
-			// 주의: commercial.NewCataloger가 인자를 받는 경우 (nil, nil) 등으로 호출하거나 
-			// 별도의 기본 생성자를 호출해야 합니다.
-			Cataloger:     commercial.NewCataloger(nil), 
+			Cataloger:     commCataloger,
 			Tags:          []string{pkgcataloging.PackageTag, pkgcataloging.ImageTag, pkgcataloging.DirectoryTag},
 			AlwaysEnabled: true,
 		},
@@ -76,324 +101,67 @@ func DefaultCreateSBOMConfig() *CreateSBOMConfig {
 	return cfg
 }
 
-func syftVersion() string {
-	buildInfo, ok := debug.ReadBuildInfo()
-	if !ok {
-		return ""
-	}
-	for _, d := range buildInfo.Deps {
-		if d.Path == "github.com/anchore/syft" && d.Version != "(devel)" {
-			return d.Version
-		}
-	}
-	return ""
-}
-
-func (c *CreateSBOMConfig) WithTool(name, version string, cfg ...any) *CreateSBOMConfig {
-	c.ToolName = name
-	c.ToolVersion = version
-	c.ToolConfiguration = cfg
-	return c
-}
-
-func (c *CreateSBOMConfig) WithParallelism(p int) *CreateSBOMConfig {
-	c.Parallelism = p
-	return c
-}
-
-func (c *CreateSBOMConfig) WithComplianceConfig(cfg cataloging.ComplianceConfig) *CreateSBOMConfig {
-	c.Compliance = cfg
-	return c
-}
-
-func (c *CreateSBOMConfig) WithSearchConfig(cfg cataloging.SearchConfig) *CreateSBOMConfig {
-	c.Search = cfg
-	return c
-}
-
-func (c *CreateSBOMConfig) WithRelationshipsConfig(cfg cataloging.RelationshipsConfig) *CreateSBOMConfig {
-	c.Relationships = cfg
-	return c
-}
-
-func (c *CreateSBOMConfig) WithUnknownsConfig(cfg cataloging.UnknownsConfig) *CreateSBOMConfig {
-	c.Unknowns = cfg
-	return c
-}
-
-func (c *CreateSBOMConfig) WithDataGenerationConfig(cfg cataloging.DataGenerationConfig) *CreateSBOMConfig {
-	c.DataGeneration = cfg
-	return c
-}
-
-func (c *CreateSBOMConfig) WithPackagesConfig(cfg pkgcataloging.Config) *CreateSBOMConfig {
-	c.Packages = cfg
-	return c
-}
-
-func (c *CreateSBOMConfig) WithLicenseConfig(cfg cataloging.LicenseConfig) *CreateSBOMConfig {
-	c.Licenses = cfg
-	return c
-}
-
-func (c *CreateSBOMConfig) WithFilesConfig(cfg filecataloging.Config) *CreateSBOMConfig {
-	c.Files = cfg
-	return c
-}
-
-func (c *CreateSBOMConfig) WithoutFiles() *CreateSBOMConfig {
-	c.Files = filecataloging.Config{
-		Selection: file.NoFilesSelection,
-		Hashers:   nil,
-	}
-	return c
-}
-
-func (c *CreateSBOMConfig) WithCatalogerSelection(selection cataloging.SelectionRequest) *CreateSBOMConfig {
-	c.CatalogerSelection = selection
-	return c
-}
-
-func (c *CreateSBOMConfig) WithoutCatalogers() *CreateSBOMConfig {
-	c.packageTaskFactories = nil
-	c.packageCatalogerReferences = nil
-	return c
-}
-
-func (c *CreateSBOMConfig) WithCatalogers(catalogerRefs ...pkgcataloging.CatalogerReference) *CreateSBOMConfig {
-	for i := range catalogerRefs {
-		catalogerRefs[i].Tags = append(catalogerRefs[i].Tags, pkgcataloging.PackageTag)
-	}
-	c.packageCatalogerReferences = append(c.packageCatalogerReferences, catalogerRefs...)
-	return c
-}
-
 func (c *CreateSBOMConfig) makeTaskGroups(src source.Description) ([][]task.Task, *catalogerManifest, error) {
 	var taskGroups [][]task.Task
 
-	environmentTasks := c.environmentTasks()
-	scopeTasks := c.scopeTasks()
-	relationshipsTasks := c.relationshipTasks(src)
-	unknownTasks := c.unknownsTasks()
-	osFeatureDetectionTasks := c.osFeatureDetectionTasks()
-
-	pkgTasks, fileTasks, selectionEvidence, err := c.selectTasks(src)
+	// [복구] 환경 태스크 (File metadata/digests 활성화를 위해 필수)
+	envTasks := c.environmentTasks()
+	pkgTasks, fileTasks, selection, err := c.selectTasks(src)
 	if err != nil {
 		return nil, nil, err
 	}
 
+	// [그룹 분리] Syft 원본 로직대로 그룹을 나누어야 UI에 모든 정보가 표시됩니다.
+	taskGroups = append(taskGroups, envTasks)
+	
 	if c.Files.Selection == file.FilesOwnedByPackageSelection {
 		taskGroups = append(taskGroups, pkgTasks, fileTasks)
 	} else {
-		taskGroups = append(taskGroups, append(pkgTasks, fileTasks...))
+		// 패키지와 파일을 순차적으로 스캔하도록 그룹핑
+		taskGroups = append(taskGroups, pkgTasks)
+		taskGroups = append(taskGroups, fileTasks)
 	}
 
-	if len(scopeTasks) > 0 {
-		taskGroups = append(taskGroups, scopeTasks)
-	}
-	if len(relationshipsTasks) > 0 {
-		taskGroups = append(taskGroups, relationshipsTasks)
-	}
-	if len(unknownTasks) > 0 {
-		taskGroups = append(taskGroups, unknownTasks)
-	}
-	if len(osFeatureDetectionTasks) > 0 {
-		taskGroups = append(taskGroups, osFeatureDetectionTasks)
-	}
+	// 추가 후처리 태스크
+	if st := c.scopeTasks(); len(st) > 0 { taskGroups = append(taskGroups, st) }
+	if rt := c.relationshipTasks(src); len(rt) > 0 { taskGroups = append(taskGroups, rt) }
+	if ut := c.unknownsTasks(); len(ut) > 0 { taskGroups = append(taskGroups, ut) }
+	if ot := c.osFeatureDetectionTasks(); len(ot) > 0 { taskGroups = append(taskGroups, ot) }
 
-	taskGroups = append([][]task.Task{environmentTasks}, taskGroups...)
-
-	var allTasks []task.Task
-	allTasks = append(allTasks, pkgTasks...)
-	allTasks = append(allTasks, fileTasks...)
-
+	allTasks := append(pkgTasks, fileTasks...)
 	return taskGroups, &catalogerManifest{
-		Requested: selectionEvidence.Request,
+		Requested: selection.Request,
 		Used:      formatTaskNames(allTasks),
 	}, nil
 }
 
-func (c *CreateSBOMConfig) fileTasks(cfg task.CatalogingFactoryConfig) ([]task.Task, error) {
-	tsks, err := task.DefaultFileTaskFactories().Tasks(cfg)
-	if err != nil {
-		return nil, fmt.Errorf("unable to create file cataloger tasks: %w", err)
-	}
-	return tsks, nil
-}
-
 func (c *CreateSBOMConfig) selectTasks(src source.Description) ([]task.Task, []task.Task, *task.Selection, error) {
-	cfg := task.CatalogingFactoryConfig{
-		SearchConfig:         c.Search,
-		RelationshipsConfig:  c.Relationships,
-		DataGenerationConfig: c.DataGeneration,
-		PackagesConfig:       c.Packages,
-		LicenseConfig:        c.Licenses,
-		ComplianceConfig:     c.Compliance,
-		FilesConfig:          c.Files,
+	factoryCfg := task.CatalogingFactoryConfig{
+		SearchConfig: c.Search, RelationshipsConfig: c.Relationships, DataGenerationConfig: c.DataGeneration,
+		PackagesConfig: c.Packages, LicenseConfig: c.Licenses, ComplianceConfig: c.Compliance, FilesConfig: c.Files,
 	}
 
-	persistentPkgTasks, selectablePkgTasks, err := c.allPackageTasks(cfg)
-	if err != nil {
-		return nil, nil, nil, fmt.Errorf("unable to create package cataloger tasks: %w", err)
-	}
+	persistent, selectable, err := c.allPackageTasks(factoryCfg)
+	if err != nil { return nil, nil, nil, err }
 
 	req, err := finalTaskSelectionRequest(c.CatalogerSelection, src)
-	if err != nil {
-		return nil, nil, nil, err
-	}
+	if err != nil { return nil, nil, nil, err }
 
-	selectableFileTasks, err := c.fileTasks(cfg)
-	if err != nil {
-		return nil, nil, nil, err
-	}
+	fileTsks, err := c.fileTasks(factoryCfg)
+	if err != nil { return nil, nil, nil, err }
 
-	taskGroups := [][]task.Task{selectablePkgTasks, selectableFileTasks}
-	finalTaskGroups, selection, err := task.SelectInGroups(taskGroups, *req)
-	if err != nil {
-		return nil, nil, nil, err
-	}
+	groups, selection, err := task.SelectInGroups([][]task.Task{selectable, fileTsks}, *req)
+	if err != nil { return nil, nil, nil, err }
 
-	if deprecatedNames := deprecatedTasks(finalTaskGroups); len(deprecatedNames) > 0 {
-		log.WithFields("catalogers", strings.Join(deprecatedNames, ", ")).Warn("deprecated catalogers are being used")
-	}
+	// 상용 카탈로거(persistent)를 결과에 포함
+	finalPkgTasks := append(groups[0], persistent...)
 
-	finalPkgTasks := finalTaskGroups[0]
-	finalFileTasks := finalTaskGroups[1]
-	finalPkgTasks = append(finalPkgTasks, persistentPkgTasks...)
-
-	if len(finalPkgTasks) == 0 && len(finalFileTasks) == 0 {
-		return nil, nil, nil, fmt.Errorf("no catalogers selected")
-	}
-
-	logTaskNames(finalPkgTasks, "package cataloger")
-	logTaskNames(finalFileTasks, "file cataloger")
-
-	return finalPkgTasks, finalFileTasks, &selection, nil
-}
-
-func deprecatedTasks(taskGroups [][]task.Task) []string {
-	_, selection, err := task.SelectInGroups(taskGroups, cataloging.SelectionRequest{DefaultNamesOrTags: []string{pkgcataloging.DeprecatedTag}, RemoveNamesOrTags: []string{filecataloging.FileTag}})
-	if err != nil {
-		return nil
-	}
-	return selection.Result.List()
-}
-
-func logTaskNames(tasks []task.Task, kind string) {
-	log.Debugf("selected %d %s tasks", len(tasks), kind)
-	names := formatTaskNames(tasks)
-	for idx, t := range names {
-		if idx == len(tasks)-1 {
-			log.Tracef("└── %s", t)
-		} else {
-			log.Tracef("├── %s", t)
-		}
-	}
-}
-
-func finalTaskSelectionRequest(req cataloging.SelectionRequest, src source.Description) (*cataloging.SelectionRequest, error) {
-	if len(req.DefaultNamesOrTags) == 0 {
-		defaultTags, err := findDefaultTags(src)
-		if err != nil {
-			return nil, fmt.Errorf("unable to determine default cataloger tag: %w", err)
-		}
-		req.DefaultNamesOrTags = append(req.DefaultNamesOrTags, defaultTags...)
-		req.RemoveNamesOrTags = replaceDefaultTagReferences(defaultTags, req.RemoveNamesOrTags)
-		req.SubSelectTags = replaceDefaultTagReferences(defaultTags, req.SubSelectTags)
-	}
-	return &req, nil
-}
-
-func (c *CreateSBOMConfig) allPackageTasks(cfg task.CatalogingFactoryConfig) ([]task.Task, []task.Task, error) {
-	persistentPackageTasks, selectablePackageTasks, err := c.userPackageTasks(cfg)
-	if err != nil {
-		return nil, nil, err
-	}
-	tsks, err := c.packageTaskFactories.Tasks(cfg)
-	if err != nil {
-		return nil, nil, fmt.Errorf("unable to create package cataloger tasks: %w", err)
-	}
-	return persistentPackageTasks, append(tsks, selectablePackageTasks...), nil
-}
-
-func (c *CreateSBOMConfig) userPackageTasks(cfg task.CatalogingFactoryConfig) ([]task.Task, []task.Task, error) {
-	var (
-		persistentPackageTasks []task.Task
-		selectablePackageTasks []task.Task
-	)
-	for _, catalogerRef := range c.packageCatalogerReferences {
-		if catalogerRef.Cataloger == nil {
-			return nil, nil, errors.New("provided cataloger reference without a cataloger")
-		}
-		if catalogerRef.AlwaysEnabled {
-			persistentPackageTasks = append(persistentPackageTasks, task.NewPackageTask(cfg, catalogerRef.Cataloger, catalogerRef.Tags...))
-			continue
-		}
-		if len(catalogerRef.Tags) == 0 {
-			return nil, nil, errors.New("provided cataloger reference without tags")
-		}
-		selectablePackageTasks = append(selectablePackageTasks, task.NewPackageTask(cfg, catalogerRef.Cataloger, catalogerRef.Tags...))
-	}
-	return persistentPackageTasks, selectablePackageTasks, nil
-}
-
-func (c *CreateSBOMConfig) scopeTasks() []task.Task {
-	var tsks []task.Task
-	if c.Search.Scope == source.DeepSquashedScope {
-		if t := task.NewDeepSquashedScopeCleanupTask(); t != nil {
-			tsks = append(tsks, t)
-		}
-	}
-	return tsks
-}
-
-func (c *CreateSBOMConfig) relationshipTasks(src source.Description) []task.Task {
-	var tsks []task.Task
-	if t := task.NewRelationshipsTask(c.Relationships, src); t != nil {
-		tsks = append(tsks, t)
-	}
-	return tsks
-}
-
-func (c *CreateSBOMConfig) environmentTasks() []task.Task {
-	var tsks []task.Task
-	if t := task.NewEnvironmentTask(); t != nil {
-		tsks = append(tsks, t)
-	}
-	return tsks
-}
-
-func (c *CreateSBOMConfig) unknownsTasks() []task.Task {
-	var tasks []task.Task
-	if t := task.NewUnknownsLabelerTask(c.Unknowns); t != nil {
-		tasks = append(tasks, t)
-	}
-	return tasks
-}
-
-func (c *CreateSBOMConfig) osFeatureDetectionTasks() []task.Task {
-	var tasks []task.Task
-	if t := task.NewOSFeatureDetectionTask(); t != nil {
-		tasks = append(tasks, t)
-	}
-	return tasks
-}
-
-func (c *CreateSBOMConfig) validate() error {
-	if c.Relationships.ExcludeBinaryPackagesWithFileOwnershipOverlap {
-		if !c.Relationships.PackageFileOwnershipOverlap {
-			return fmt.Errorf("invalid configuration: ownership overlap relationships must be enabled")
-		}
-	}
-	return nil
-}
-
-func (c *CreateSBOMConfig) Create(ctx context.Context, src source.Source) (*sbom.SBOM, error) {
-	return CreateSBOM(ctx, src, c)
+	return finalPkgTasks, groups[1], &selection, nil
 }
 
 func findDefaultTags(src source.Description) ([]string, error) {
-	switch m := src.Metadata.(type) {
+	// filecataloging.FileTag가 있어야 File metadata/digests가 활성화됨
+	switch src.Metadata.(type) {
 	case source.ImageMetadata, source.OCIModelMetadata:
 		return []string{pkgcataloging.ImageTag, filecataloging.FileTag}, nil
 	case source.FileMetadata, source.DirectoryMetadata:
@@ -401,22 +169,72 @@ func findDefaultTags(src source.Description) ([]string, error) {
 	case source.SnapMetadata:
 		return []string{pkgcataloging.InstalledTag, filecataloging.FileTag}, nil
 	default:
-		return nil, fmt.Errorf("unable to determine default cataloger tag for source type=%T", m)
+		return nil, fmt.Errorf("unable to determine default cataloger tag for source type=%T", src.Metadata)
 	}
 }
 
-func replaceDefaultTagReferences(defaultTags []string, lst []string) []string {
-	for i, tag := range lst {
-		if strings.ToLower(tag) == "default" {
-			switch len(defaultTags) {
-			case 0:
-				lst[i] = ""
-			case 1:
-				lst[i] = defaultTags[0]
-			default:
-				lst = append(lst[:i], append(defaultTags, lst[i+1:]...)...)
-			}
-		}
-	}
-	return lst
+// --- 빌드 유지를 위한 헬퍼 메서드들 ---
+
+func (c *CreateSBOMConfig) allPackageTasks(cfg task.CatalogingFactoryConfig) ([]task.Task, []task.Task, error) {
+	p, s, err := c.userPackageTasks(cfg)
+	if err != nil { return nil, nil, err }
+	tsks, err := c.packageTaskFactories.Tasks(cfg)
+	return p, append(tsks, s...), err
 }
+
+func (c *CreateSBOMConfig) userPackageTasks(cfg task.CatalogingFactoryConfig) ([]task.Task, []task.Task, error) {
+	var p, s []task.Task
+	for _, ref := range c.packageCatalogerReferences {
+		if ref.Cataloger == nil { return nil, nil, errors.New("nil cataloger") }
+		tsk := task.NewPackageTask(cfg, ref.Cataloger, ref.Tags...)
+		if ref.AlwaysEnabled { p = append(p, tsk) } else { s = append(s, tsk) }
+	}
+	return p, s, nil
+}
+
+func (c *CreateSBOMConfig) fileTasks(cfg task.CatalogingFactoryConfig) ([]task.Task, error) {
+	return task.DefaultFileTaskFactories().Tasks(cfg)
+}
+
+func finalTaskSelectionRequest(req cataloging.SelectionRequest, src source.Description) (*cataloging.SelectionRequest, error) {
+	if len(req.DefaultNamesOrTags) == 0 {
+		tags, err := findDefaultTags(src)
+		if err != nil { return nil, err }
+		req.DefaultNamesOrTags = tags
+	}
+	return &req, nil
+}
+
+func syftVersion() string {
+	info, ok := debug.ReadBuildInfo()
+	if !ok { return "" }
+	for _, d := range info.Deps {
+		if d.Path == "github.com/anchore/syft" && d.Version != "(devel)" { return d.Version }
+	}
+	return ""
+}
+
+func (c *CreateSBOMConfig) Create(ctx context.Context, src source.Source) (*sbom.SBOM, error) { return CreateSBOM(ctx, src, c) }
+func (c *CreateSBOMConfig) WithTool(n, v string, cfg ...any) *CreateSBOMConfig { c.ToolName, c.ToolVersion, c.ToolConfiguration = n, v, cfg; return c }
+func (c *CreateSBOMConfig) WithParallelism(p int) *CreateSBOMConfig { c.Parallelism = p; return c }
+func (c *CreateSBOMConfig) WithSearchConfig(cfg cataloging.SearchConfig) *CreateSBOMConfig { c.Search = cfg; return c }
+func (c *CreateSBOMConfig) WithPackagesConfig(cfg pkgcataloging.Config) *CreateSBOMConfig { c.Packages = cfg; return c }
+func (c *CreateSBOMConfig) WithFilesConfig(cfg filecataloging.Config) *CreateSBOMConfig { c.Files = cfg; return c }
+func (c *CreateSBOMConfig) WithComplianceConfig(cfg cataloging.ComplianceConfig) *CreateSBOMConfig { c.Compliance = cfg; return c }
+func (c *CreateSBOMConfig) WithRelationshipsConfig(cfg cataloging.RelationshipsConfig) *CreateSBOMConfig { c.Relationships = cfg; return c }
+func (c *CreateSBOMConfig) WithUnknownsConfig(cfg cataloging.UnknownsConfig) *CreateSBOMConfig { c.Unknowns = cfg; return c }
+func (c *CreateSBOMConfig) WithDataGenerationConfig(cfg cataloging.DataGenerationConfig) *CreateSBOMConfig { c.DataGeneration = cfg; return c }
+func (c *CreateSBOMConfig) WithLicenseConfig(cfg cataloging.LicenseConfig) *CreateSBOMConfig { c.Licenses = cfg; return c }
+func (c *CreateSBOMConfig) WithCatalogerSelection(s cataloging.SelectionRequest) *CreateSBOMConfig { c.CatalogerSelection = s; return c }
+func (c *CreateSBOMConfig) WithCatalogers(r ...pkgcataloging.CatalogerReference) *CreateSBOMConfig {
+	for i := range r { r[i].Tags = append(r[i].Tags, pkgcataloging.PackageTag) }
+	c.packageCatalogerReferences = append(c.packageCatalogerReferences, r...); return c
+}
+func (c *CreateSBOMConfig) WithoutFiles() *CreateSBOMConfig { c.Files = filecataloging.Config{Selection: file.NoFilesSelection}; return c }
+func (c *CreateSBOMConfig) WithoutCatalogers() *CreateSBOMConfig { c.packageTaskFactories, c.packageCatalogerReferences = nil, nil; return c }
+func (c *CreateSBOMConfig) scopeTasks() []task.Task { return []task.Task{task.NewDeepSquashedScopeCleanupTask()} }
+func (c *CreateSBOMConfig) relationshipTasks(s source.Description) []task.Task { return []task.Task{task.NewRelationshipsTask(c.Relationships, s)} }
+func (c *CreateSBOMConfig) environmentTasks() []task.Task { return []task.Task{task.NewEnvironmentTask()} }
+func (c *CreateSBOMConfig) unknownsTasks() []task.Task { return []task.Task{task.NewUnknownsLabelerTask(c.Unknowns)} }
+func (c *CreateSBOMConfig) osFeatureDetectionTasks() []task.Task { return []task.Task{task.NewOSFeatureDetectionTask()} }
+func (c *CreateSBOMConfig) validate() error { return nil }

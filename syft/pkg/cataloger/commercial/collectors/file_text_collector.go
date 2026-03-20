@@ -1,175 +1,91 @@
 package collectors
 
 import (
-	"bufio"
 	"bytes"
 	"context"
 	"io"
 	"path/filepath"
 	"strings"
 
+	"github.com/anchore/syft/internal/log"
 	"github.com/anchore/syft/syft/file"
 	"github.com/anchore/syft/syft/pkg/cataloger/commercial"
 )
 
-const (
-	defaultMaxTextFileSize = 2 * 1024 * 1024
-	defaultMaxLineLength   = 4096
-)
-
-type FileTextCollector struct {
-	MaxFileSize int64
+// path_collector.go에서 사용하는 공용 함수
+func normalizePath(p string) string {
+	return strings.TrimPrefix(filepath.Clean(p), "/")
 }
 
-func NewFileTextCollector() *FileTextCollector {
+type FileTextCollector struct {
+	keywords []string
+}
+
+func NewFileTextCollector(keywords ...string) *FileTextCollector {
 	return &FileTextCollector{
-		MaxFileSize: defaultMaxTextFileSize,
+		keywords: keywords,
 	}
 }
 
+// 인터페이스 규격 만족
 func (c *FileTextCollector) Name() string {
-	return "file-text-collector"
+	return "commercial-file-text-collector"
 }
 
 func (c *FileTextCollector) Collect(ctx context.Context, resolver file.Resolver) ([]commercial.CollectedEvidence, error) {
-	var out []commercial.CollectedEvidence
+	var results []commercial.CollectedEvidence
 
 	locations, err := resolver.FilesByGlob("**/*")
 	if err != nil {
 		return nil, err
 	}
 
-	for _, loc := range locations {
-		select {
-		case <-ctx.Done():
-			return nil, ctx.Err()
-		default:
-		}
-
-		path := loc.RealPath
-		if path == "" {
-			path = loc.AccessPath
-		}
-		path = normalizePath(path)
-
-		if !looksLikeTextCandidate(path) {
+	for _, location := range locations {
+		ext := strings.ToLower(filepath.Ext(location.RealPath))
+		if !isTargetExtension(ext) {
 			continue
 		}
 
-		meta, err := resolver.FileMetadataByLocation(loc)
-		if err == nil && c.MaxFileSize > 0 && meta.Size > c.MaxFileSize {
-			continue
-		}
-
-		reader, err := resolver.FileContentsByLocation(loc)
+		readCloser, err := resolver.FileContentsByLocation(location)
 		if err != nil {
 			continue
 		}
 
-		isText, sample, err := sniffText(reader)
-		_ = reader.Close()
-		if err != nil || !isText {
+		// 10MB까지만 읽어서 메모리 보호
+		contentBytes, err := io.ReadAll(io.LimitReader(readCloser, 10*1024*1024))
+		readCloser.Close()
+		if err != nil || len(contentBytes) == 0 {
 			continue
 		}
 
-		if sample != "" {
-			out = append(out, commercial.CollectedEvidence{
-				Type:       commercial.EvidenceTypeText,
-				Location:   path,
-				Key:        "sample",
-				Value:      truncateString(sample, 512),
-				Collector:  c.Name(),
-				Confidence: 0,
-			})
-		}
+		// [핵심] 대소문자 무시를 위해 파일 내용을 전부 소문자로 변환합니다.
+		lowerContentBytes := bytes.ToLower(contentBytes)
 
-		reader, err = resolver.FileContentsByLocation(loc)
-		if err != nil {
-			continue
-		}
+		for _, kw := range c.keywords {
+			// 우리가 찾는 키워드도 소문자로 변환하여 비교합니다.
+			lowerKw := bytes.ToLower([]byte(kw))
 
-		scanner := bufio.NewScanner(reader)
-		buf := make([]byte, 0, 64*1024)
-		scanner.Buffer(buf, defaultMaxLineLength)
-
-		for scanner.Scan() {
-			line := strings.TrimSpace(scanner.Text())
-			if line == "" {
-				continue
+			if bytes.Contains(lowerContentBytes, lowerKw) {
+				
+				// 터미널에서 확실하게 볼 수 있도록 로그 출력
+				log.Warnf("💥 [BINGO] '%s' 키워드를 찾았습니다: %s", kw, location.RealPath)
+				
+				results = append(results, commercial.CollectedEvidence{
+					Type:     "file_text",
+					Location: location.RealPath,
+					Value:    kw,
+				})
 			}
-			line = truncateString(line, defaultMaxLineLength)
-
-			out = append(out, commercial.CollectedEvidence{
-				Type:       commercial.EvidenceTypeText,
-				Location:   path,
-				Key:        "line",
-				Value:      line,
-				Collector:  c.Name(),
-				Confidence: 0,
-			})
 		}
-
-		_ = reader.Close()
 	}
-
-	return out, nil
+	return results, nil
 }
 
-func looksLikeTextCandidate(path string) bool {
-	lower := strings.ToLower(path)
-
-	textExts := []string{
-		".txt", ".conf", ".cfg", ".ini", ".json", ".xml", ".yaml", ".yml",
-		".sh", ".lua", ".py", ".pl", ".cgi", ".js",
-		".html", ".htm", ".md", ".rst",
-		".license", ".lic", ".notice",
-	}
-
-	for _, ext := range textExts {
-		if strings.HasSuffix(lower, ext) {
-			return true
-		}
-	}
-
-	base := filepath.Base(lower)
-	switch base {
-	case "readme", "readme.txt", "release_notes", "releasenotes", "license", "notice", "version", "banner":
+func isTargetExtension(ext string) bool {
+	switch ext {
+	// 리눅스 커널 모듈(.ko), 공유 라이브러리(.so), 바이너리 실행파일(""), 설정 파일 등
+	case ".ko", ".so", ".bin", ".elf", "", ".conf", ".sh", ".json", ".xml", ".txt":
 		return true
 	}
-
-	if strings.Contains(lower, "/etc/init.d/") ||
-		strings.Contains(lower, "/etc/config/") ||
-		strings.Contains(lower, "/usr/share/") ||
-		strings.Contains(lower, "/etc/") {
-		return true
-	}
-
 	return false
 }
-
-func sniffText(r io.Reader) (bool, string, error) {
-	const sniffSize = 4096
-
-	buf := make([]byte, sniffSize)
-	n, err := r.Read(buf)
-	if err != nil && err != io.EOF {
-		return false, "", err
-	}
-	buf = buf[:n]
-	if len(buf) == 0 {
-		return false, "", nil
-	}
-	if bytes.IndexByte(buf, 0x00) >= 0 {
-		return false, "", nil
-	}
-	return true, strings.TrimSpace(string(buf)), nil
-}
-
-func truncateString(s string, max int) string {
-	if len(s) <= max {
-		return s
-	}
-	return s[:max]
-}
-
-var _ commercial.EvidenceCollector = (*FileTextCollector)(nil)
