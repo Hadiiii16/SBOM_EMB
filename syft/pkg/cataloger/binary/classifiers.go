@@ -835,6 +835,17 @@ func DefaultClassifiers() []binutils.Classifier {
 			PURL:    mustPURL("pkg:generic/mongodb@version"),
 			CPEs:    singleCPE("cpe:2.3:a:mongodb:mongodb:*:*:*:*:*:*:*:*", cpe.NVDDictionaryLookupSource),
 		},
+		// {
+		// 	Class:    "qualcomm-wlan-driver",
+		// 	FileGlob: "**/qca_ol.ko",
+		// 	EvidenceMatcher: m.FileContentsVersionMatcher(
+		// 		// [a-f0-9] 대신 영문자와 숫자를 모두 허용하도록 변경
+		// 		`qca-wifi-(?P<version>[a-zA-Z0-9]+)`,
+		// 	),
+		// 	Package: "qca-wifi-driver",
+		// 	PURL:    mustPURL("pkg:generic/qualcomm/qca-wifi@version"),
+		// 	CPEs:    singleCPE("cpe:2.3:a:qualcomm:qca_ol:*:*:*:*:*:*:*:*", cpe.NVDDictionaryLookupSource),
+		// },
 	}
 
 	return append(classifiers, defaultJavaClassifiers()...)

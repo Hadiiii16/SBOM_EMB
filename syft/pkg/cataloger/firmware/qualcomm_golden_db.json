@@ -1,0 +1,932 @@
+[
+    {
+        "chipset": "QCA9984",
+        "official_cpe_product": "qca9984_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "QCA9984",
+                "board-2.bin"
+            ],
+            "optional": [
+                "QCA-ATH10K-BOARD",
+                "bus=pci,bmi-chip-id=0,bmi-board-id=1,variant=Nokia-AC400immm",
+                "bus=pci,bmi-chip-id=0,bmi-board-id=2,variant=Nokia-AC400immm",
+                "bus=pci,bmi-chip-id=0,bmi-board-id=3,variant=NEC-Platforms-WG2600HP3",
+                "bus=pci,bmi-chip-id=0,bmi-board-id=4,variant=NEC-Platforms-WG2600HP3"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9984",
+        "official_cpe_product": "qca9984_firmware",
+        "source_file": "firmware-5.bin",
+        "signatures": {
+            "critical": [
+                "firmware-5.bin",
+                "QCA9984",
+                "10.4-3.9.0.2-00157ww"
+            ],
+            "optional": [
+                " allocation from",
+                "\"aT2aeRaPbaRraj",
+                "(pool failed for",
+                "004bDl2DoZ32",
+                "0123456789ABCDEF",
+                ">MCN_NOT_FOUND",
+                "Bb/rb2Rb0bb1",
+                "Brx_df_hist_err[",
+                "D BGH@HABGI@HABGJ@HABGKO`\\QPPtP",
+                "DF bucket[",
+                "QCA-ATH10K",
+                "bTIbTJRd&B"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6174",
+        "official_cpe_product": "qca6174_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "QCA6174",
+                "board-2.bin"
+            ],
+            "optional": [
+                "ABEGJL1257:<",
+                "QCA-ATH10K-BOARD",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=105b,subsystem-device=e08em",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=10cf,subsystem-device=190dm",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=11ad,subsystem-device=0804m",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=11ad,subsystem-device=0814m",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=11ad,subsystem-device=0824m",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=11ad,subsystem-device=1804m",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=144d,subsystem-device=4125m",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=144d,subsystem-device=4126m",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=144d,subsystem-device=4127m",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=144d,subsystem-device=4128m"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6174",
+        "official_cpe_product": "qca6174_firmware",
+        "source_file": "board.bin",
+        "signatures": {
+            "critical": [
+                "board.bin",
+                "QCA6174"
+            ],
+            "optional": [
+                "ABEGJL1257:<"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6174",
+        "official_cpe_product": "qca6174_firmware",
+        "source_file": "firmware-5.bin",
+        "signatures": {
+            "critical": [
+                "firmware-5.bin",
+                "SW_RM.1.1.1-00157-QCARMSWPZ-1www",
+                "QCA6174"
+            ],
+            "optional": [
+                "(qx!HQ8azDz3x",
+                "2<r#IzXW24",
+                "@RCPRC<RC;RC:RC9RC8Y",
+                "ABEGJL1257:<",
+                "AXI_ERROR_DETECTED",
+                "Aug 21 2015",
+                "BETTER_AP found ",
+                "Frame allowed",
+                "Not valid 6164-5 settings!",
+                "P(t2#UPPE7",
+                "PNO matched",
+                "QCA-ATH10K"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6174",
+        "official_cpe_product": "qca6174_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "QCA6174",
+                "board-2.bin"
+            ],
+            "optional": [
+                "!9,A7JDRUYlb",
+                "\"9*A5IAQRYfa",
+                "\"9+A6IDQUYka",
+                "#B*J6REZTbij",
+                "#W,_9gFoXwo",
+                "$9-A7IEQXYka",
+                "(91A>IMQaYya",
+                "9(A1I?RMYaaxi",
+                "ABEGJL1257:<",
+                "GEN2-RM051-010",
+                "QCA-ATH10K-BOARD",
+                "bus=pci,vendor=168c,device=003e,subsystem-vendor=045e,subsystem-device=0001m"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6174",
+        "official_cpe_product": "qca6174_firmware",
+        "source_file": "firmware-6.bin",
+        "signatures": {
+            "critical": [
+                "firmware-6.bin",
+                "WLAN.RM.4.4.1-00309-",
+                "QCA6174"
+            ],
+            "optional": [
+                "HTT_TXBF_ACTUAL_LENGTH == %d ",
+                "wlan_mgmt_tx_send FAILED",
+                "wlan_mgmt_txrx_send_bcn_byref: wlan_vdev_find failed ",
+                "wmi_cmd_bcn_tx_handler: wlan_vdev_find_vdev failed",
+                "wmi_cmd_mgmt_tx_handler: wlan_vdev_find_vdev failed"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6174",
+        "official_cpe_product": "qca6174_firmware",
+        "source_file": "board.bin",
+        "signatures": {
+            "critical": [
+                "board.bin",
+                "QCA6174"
+            ],
+            "optional": [
+                "ABEGJL1257:<"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6174",
+        "official_cpe_product": "qca6174_firmware",
+        "source_file": "firmware-sdio-6.bin",
+        "signatures": {
+            "critical": [
+                "firmware-sdio-6.bin",
+                "WLAN.RMH.4.4.1-00174",
+                "QCA6174"
+            ],
+            "optional": [
+                "HTT_TXBF_ACTUAL_LENGTH == %d ",
+                "wlan_mgmt_tx_send FAILED",
+                "wlan_mgmt_txrx_send_bcn_byref: wlan_vdev_find failed ",
+                "wmi_cmd_bcn_tx_handler: wlan_vdev_find_vdev failed",
+                "wmi_cmd_mgmt_tx_handler: wlan_vdev_find_vdev failed"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6174",
+        "official_cpe_product": "qca6174_firmware",
+        "source_file": "firmware-4.bin",
+        "signatures": {
+            "critical": [
+                "QCA6174",
+                "firmware-4.bin"
+            ],
+            "optional": [
+                "HTT_TXBF_ACTUAL_LENGTH == %d ",
+                "wlan_mgmt_tx_send FAILED",
+                "wlan_mgmt_txrx_send_bcn_byref: wlan_vdev_find failed ",
+                "wmi_cmd_bcn_tx_handler: wlan_vdev_find_vdev failed",
+                "wmi_cmd_mgmt_tx_handler: wlan_vdev_find_vdev failed"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA988X",
+        "official_cpe_product": "qca988x_firmware",
+        "source_file": "board.bin",
+        "signatures": {
+            "critical": [
+                "QCA988X",
+                "board.bin"
+            ],
+            "optional": [
+                "ABEGJL1257:<"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA988X",
+        "official_cpe_product": "qca988x_firmware",
+        "source_file": "firmware-4.bin",
+        "signatures": {
+            "critical": [
+                "QCA988X",
+                "firmware-4.bin"
+            ],
+            "optional": [
+                "\t ERROR copy",
+                "\tXB140-010-N0022[",
+                "  Unknown scan priority, no ocs",
+                "  doNoiseFloor",
+                " AL_DBGID_TX_PPDU_COMP_ERR, Tim",
+                " BB_agc_contro",
+                " check_and_swap_ctl_data",
+                " exit_clean",
+                " sps_timeou",
+                "\"%s: num_peer_entries",
+                "#rror_report_event",
+                "$Table initialized5"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA988X",
+        "official_cpe_product": "qca988x_firmware",
+        "source_file": "firmware-5.bin",
+        "signatures": {
+            "critical": [
+                "QCA988X",
+                "firmware-5.bin",
+                "10.2.4-1.0-00047"
+            ],
+            "optional": [
+                "\t ERROR copy",
+                "\tXB140-010-N0022[",
+                "  %d: ar_wal_ast_att",
+                "  Unknown scan priority, no ocs",
+                "  doNoiseFloor",
+                " AL_DBGID_TX_PPDU_COMP_ERR, Tim",
+                " BB_agc_contro",
+                " _htt_tgt_tx_compl_ind",
+                " check_and_swap_ctl_data",
+                " not handled in",
+                "$Table initialized5",
+                "%s: WMI_PDEV_PARAM_TX_CHAIN_MASK 0x%x"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA4019",
+        "official_cpe_product": "qca4019_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "board-2.bin",
+                "QCA4019"
+            ],
+            "optional": [
+                "MCN_NOT_FOUND",
+                "QCA-ATH10K-BOARD",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=8devices-Habanerom",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=8devices-Jalapenom",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=EnGenius-EAP1300mm",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=EnGenius-EMD1m",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=EnGenius-EMR3500mm",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=EnGenius-ENH1350EXTmmm",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=EnGenius-ENS620EXT",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=GO_BREEZEm",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=GO_GALEmmm",
+                "bus=ahb,bmi-chip-id=0,bmi-board-id=16,variant=Netgear-EX6100v2mm"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA4019",
+        "official_cpe_product": "qca4019_firmware",
+        "source_file": "firmware-5.bin",
+        "signatures": {
+            "critical": [
+                "firmware-5.bin",
+                "QCA4019"
+            ],
+            "optional": [
+                "\"a62a:Ba4Ra9qF",
+                "\"aK2aLRa`baM",
+                "\"ahRaRbaSra`",
+                "0allocation from;",
+                "3prio_gpio_conflic",
+                "@w HCy3hur",
+                "Bb/rb2Rb0bb1",
+                "Brx_df_hist_err",
+                "EPZcPPtf%#",
+                "P DF bucket",
+                "Pchecksum=",
+                "QCA-ATH10K"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9888",
+        "official_cpe_product": "qca9888_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "QCA9888",
+                "board-2.bin"
+            ],
+            "optional": [
+                "QCA-ATH10K-BOARD",
+                "bus=pci,bmi-chip-id=0,bmi-board-id=16,variant=EnGenius-EAP2200mm",
+                "bus=pci,bmi-chip-id=0,bmi-board-id=16,variant=EnGenius-EMR5000mm",
+                "bus=pci,bmi-chip-id=0,bmi-board-id=16,variant=PlasmaCloud-PA2200",
+                "bus=pci,bmi-chip-id=0,bmi-board-id=17,variant=Netgear-LBR20m",
+                "bus=pci,bmi-chip-id=0,bmi-board-id=23,variant=linksys-whw03v2mmm"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9888",
+        "official_cpe_product": "qca9888_firmware",
+        "source_file": "firmware-5.bin",
+        "signatures": {
+            "critical": [
+                "QCA9888",
+                "firmware-5.bin",
+                "10.4-3.9.0.2-00157ww"
+            ],
+            "optional": [
+                " allocation fromW",
+                "\"aT2aUBaQq",
+                "\"aa2abRaRbacra~",
+                "(pool failed forW",
+                "0123456789ABCDEFW",
+                ">MCN_NOT_FOUND",
+                "Ba5Ba4Ba=Ba<ba9ba8Ra;Ra:",
+                "Bb.rb1Rb/bb0",
+                "Brx_df_hist_err",
+                "D BGH@HABGI@HABGJ@HABGKO`\\QPPtP",
+                "QCA-ATH10K",
+                "bTIbTJRd&B"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9887",
+        "official_cpe_product": "qca9887_firmware",
+        "source_file": "board.bin",
+        "signatures": {
+            "critical": [
+                "board.bin",
+                "QCA9887"
+            ],
+            "optional": [
+                "@FABE0681257"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9887",
+        "official_cpe_product": "qca9887_firmware",
+        "source_file": "firmware-5.bin",
+        "signatures": {
+            "critical": [
+                "QCA9887",
+                "firmware-5.bin",
+                "10.2.4-1.0-00047"
+            ],
+            "optional": [
+                "\t ERROR copy",
+                "\tXB140-010-N0022[",
+                "  PHY_BB_CCA_B0_MINCCAPWR_0:",
+                "  Unknown scan priority, no ocs",
+                " AL_DBGID_TX_PPDU_COMP_ERR, Time:",
+                " BB_agc_contro",
+                " check_and_swap_ctl_data",
+                " not handled in",
+                "\"ak2aoBalbam",
+                "$Table initialized5",
+                "%s: WMI_PDEV_PARAM_TX_CHAIN_MASK",
+                "&Cannot fetch addrs"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9377",
+        "official_cpe_product": "qca9377_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "board-2.bin",
+                "QCA9377"
+            ],
+            "optional": [
+                "ABEGJL1257:<",
+                "QCA-ATH10K-BOARD",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=1028,subsystem-device=1810m",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=105b,subsystem-device=e09am",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=105b,subsystem-device=e0a1m",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=11ad,subsystem-device=0507m",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=11ad,subsystem-device=0806m",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=11ad,subsystem-device=08a6m",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=11ad,subsystem-device=1806m",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=144d,subsystem-device=412bm",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=144d,subsystem-device=412cm",
+                "bus=pci,vendor=168c,device=0042,subsystem-vendor=144d,subsystem-device=412dm"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9377",
+        "official_cpe_product": "qca9377_firmware",
+        "source_file": "firmware-sdio-5.bin",
+        "signatures": {
+            "critical": [
+                "WLAN.TF.1.1.1-00061-QCATFSWPZ-1w",
+                "firmware-sdio-5.bin",
+                "QCA9377"
+            ],
+            "optional": [
+                "(qx!HQ8azDz3x",
+                "2<r#IzXW24",
+                "@RCPRC<RC;RC:RC9RC8Y",
+                "ABEGJL1257:<",
+                "CRASH_DUMP",
+                "Frame allowed",
+                "Group key expansion",
+                "HIF-USB enable ALT_DATA_CREDIT_SIZE %d",
+                "HOP invalid",
+                "Jan 11 2017",
+                "LED module inited. ",
+                "No rsna AKM Count"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9377",
+        "official_cpe_product": "qca9377_firmware",
+        "source_file": "firmware-6.bin",
+        "signatures": {
+            "critical": [
+                "firmware-6.bin",
+                "QCA9377"
+            ],
+            "optional": [
+                "HTT_TXBF_ACTUAL_LENGTH == %d ",
+                "wlan_mgmt_tx_send FAILED",
+                "wlan_mgmt_txrx_send_bcn_byref: wlan_vdev_find failed ",
+                "wmi_cmd_bcn_tx_handler: wlan_vdev_find_vdev failed",
+                "wmi_cmd_mgmt_tx_handler: wlan_vdev_find_vdev failed"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9377",
+        "official_cpe_product": "qca9377_firmware",
+        "source_file": "board.bin",
+        "signatures": {
+            "critical": [
+                "board.bin",
+                "QCA9377"
+            ],
+            "optional": [
+                "ABEGJL1257:<"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA9377",
+        "official_cpe_product": "qca9377_firmware",
+        "source_file": "firmware-5.bin",
+        "signatures": {
+            "critical": [
+                "firmware-5.bin",
+                "QCA9377"
+            ],
+            "optional": [
+                "(qx!HQ8azDz3x",
+                "0123456789ABCDEF0123456789abcdef",
+                "2<r#IzXW24",
+                "@RCPRC<RC;RC:RC9RC8Y",
+                "ABEGJL1257:<",
+                "AXI_ERROR_DETECTED",
+                "BEACON_RECVD",
+                "BETTER_AP found ",
+                "BGSCAN_TIMEOUT",
+                "CLUSTER_MERGE",
+                "CRASH_DUMP",
+                "Continues Read detected.%x"
+            ]
+        }
+    },
+    {
+        "chipset": "QCN9074",
+        "official_cpe_product": "qcn9074_firmware",
+        "source_file": "amss.bin",
+        "signatures": {
+            "critical": [
+                "amss.bin",
+                "QCN9074",
+                "QC_IMAGE_VERSION_STRING=WLAN.HK.2.9.0.1-02146-QCAHKSWPL_SILICONZ-1",
+                "QURT Kernel ver.: 03.01.27.06.00.00.03"
+            ],
+            "optional": [
+                "QMI_TEST_SVC",
+                "WLAN_IST%d",
+                "WLAN_OFFLOADS",
+                "WLAN_SCHED0",
+                "WLAN_TQM_QINFO",
+                "WLAN_TXABORT_TQM_SYNC",
+                "WLAN_TX_COMPL0",
+                "WLAN_TX_DE",
+                "WMI_CTRL_PATH_STATS_ARENA_AMSS",
+                "WMI_CTRL_PATH_STATS_ARENA_CALDB",
+                "WMI_CTRL_PATH_STATS_ARENA_CMEM",
+                "WMI_CTRL_PATH_STATS_ARENA_DBG_SRAM",
+                "WMI_CTRL_PATH_STATS_ARENA_DBG_SRAM_AUX",
+                "WMI_CTRL_PATH_STATS_ARENA_EMUPHY",
+                "WMI_CTRL_PATH_STATS_ARENA_ETMREMOTE"
+            ]
+        }
+    },
+    {
+        "chipset": "QCN9074",
+        "official_cpe_product": "qcn9074_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "QCN9074",
+                "board-2.bin"
+            ],
+            "optional": [
+                "QCA-ATH11K-BOARD"
+            ]
+        }
+    },
+    {
+        "chipset": "QCN9074",
+        "official_cpe_product": "qcn9074_firmware",
+        "source_file": "m3.bin",
+        "signatures": {
+            "critical": [
+                "WLAN_UCODE_PINE_5.0.9-00000",
+                "QCN9074",
+                "m3.bin"
+            ],
+            "optional": [
+                "#edpd_isr_calls > edpd_chunks",
+                "160M_channelh_bad_decim",
+                "BF_PARAMS_COMMON_FORCE_CRASH",
+                "BF_PARAMS_USER_FORCE_CRASH",
+                "BF_WT_NOT_READY_FORCE_CRASH",
+                "CFR_exceeds_16k",
+                "CRASH_IBF_STR_PKT_END",
+                "DFS: Inv dst_addr",
+                "DOT11BA_INV_CBW",
+                "DOT11BA_INV_RATE",
+                "ERROR_PHY_RTT_HDR_SIZE",
+                "ERR_ASYN_RESET"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA2066",
+        "official_cpe_product": "qca2066_firmware",
+        "source_file": "amss.bin",
+        "signatures": {
+            "critical": [
+                "QC_IMAGE_VERSION_STRING=WLAN.HSP.1.1-03926.13-QCAHSPSWPL_V2_SILICONZ_CE-2.52297.9",
+                "amss.bin",
+                "QURT Kernel ver.: 03.01.27.06.00.00.08",
+                "QCA2066"
+            ],
+            "optional": [
+                "WAL_PM_ARB_REQ_ID_HW_DTIM_CLIENT",
+                "WAL_PM_ARB_REQ_ID_PARTIAL_AWAKE_CLIENT",
+                "WAL_PM_ARB_REQ_ID_SW_DTIM_CLIENT",
+                "WAL_PM_ARB_REQ_ID_WAL_CLIENT",
+                "WAL_PM_ARB_REQ_ID_WLAN_PM_ARB",
+                "WAL_PM_ARB_REQ_ID_WOW_CLIENT",
+                "WLAN_IST%d",
+                "WLAN_MEM_DPD",
+                "WLAN_OFFLOADS",
+                "WLAN_SCHED0",
+                "WLAN_SCHED1",
+                "WLAN_TX_COMPL0",
+                "WLAN_TX_COMPL1",
+                "WLAN_TX_DE",
+                "mhi_core_reset: Reset complete"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA2066",
+        "official_cpe_product": "qca2066_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "board-2.bin",
+                "QCA2066"
+            ],
+            "optional": [
+                "8T8S8R7Q7P7O6N5M5L4K3J3I2G",
+                "ABCCHJLLNNP",
+                "LkLkLjKjJiJiHhHgGfFeEdCcBb",
+                "QCA-ATH11K-BOARD",
+                "RnPmOlOkMjLiKhJgIfHeGdEcDb",
+                "RrRrQqQpQpQoPnPnOmOlNlNkMj",
+                "TgTfTeTcSbSaR`Q_P^N]M[LZKX",
+                "VmVlVlUkTjTiShRgReQdPcOaN`",
+                "_binary_bdwlan_tmp_bin_end",
+                "_binary_bdwlan_tmp_bin_size",
+                "_binary_bdwlan_tmp_bin_start",
+                "_binary_tempDir_bdwlan01_b06_end"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA2066",
+        "official_cpe_product": "qca2066_firmware",
+        "source_file": "m3.bin",
+        "signatures": {
+            "critical": [
+                "m3.bin",
+                "WLAN_UCODE_HASTINGSPRIME_4.0.4-00000",
+                "QCA2066"
+            ],
+            "optional": [
+                "#edpd_isr>edpd_chunks,Vreg",
+                "BF_PARAMS_COMMON_FORCE_CRASH",
+                "BF_PARAMS_USER_FORCE_CRASH",
+                "BF_WT_NOT_READY_FORCE_CRASH",
+                "CRASH_IBF_STR_PKT_END",
+                "CRASH_PREFET0",
+                "CRASH_PREFET1",
+                "CRASH_PREFET3",
+                "CRSH:TXFDhung",
+                "DB:Force crash at PktEnd",
+                "DC_SUB_ACTIVE_NOT_VALID",
+                "DF CfgDCN:invld ch_bw"
+            ]
+        }
+    },
+    {
+        "chipset": "IPQ8074",
+        "official_cpe_product": "ipq8074_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "board-2.bin",
+                "IPQ8074"
+            ],
+            "optional": [
+                "QCA-ATH11K-BOARD",
+                "bus=ahb,qmi-chip-id=0,qmi-board-id=255,variant=Yuncore-AX880"
+            ]
+        }
+    },
+    {
+        "chipset": "IPQ5018",
+        "official_cpe_product": "ipq5018_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "board-2.bin",
+                "IPQ5018"
+            ],
+            "optional": [
+                "QCA-ATH11K-BOARD"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6698AQ",
+        "official_cpe_product": "qca6698aq_firmware",
+        "source_file": "amss.bin",
+        "signatures": {
+            "critical": [
+                "QURT Kernel ver.: 03.01.27.06.00.00.08",
+                "amss.bin",
+                "QCA6698AQ"
+            ],
+            "optional": [
+                "WAL_PM_ARB_REQ_ID_HW_DTIM_CLIENT",
+                "WAL_PM_ARB_REQ_ID_PARTIAL_AWAKE_CLIENT",
+                "WAL_PM_ARB_REQ_ID_SW_DTIM_CLIENT",
+                "WAL_PM_ARB_REQ_ID_WAL_CLIENT",
+                "WAL_PM_ARB_REQ_ID_WLAN_PM_ARB",
+                "WAL_PM_ARB_REQ_ID_WOW_CLIENT",
+                "WLAN_IST%d",
+                "WLAN_MEM_DPD",
+                "WLAN_OFFLOADS",
+                "WLAN_SCHED0",
+                "WLAN_SCHED1",
+                "WLAN_TX_COMPL0",
+                "WLAN_TX_COMPL1",
+                "WLAN_TX_DE",
+                "mhi_core_reset: Reset complete"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6698AQ",
+        "official_cpe_product": "qca6698aq_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "board-2.bin",
+                "QCA6698AQ"
+            ],
+            "optional": [
+                ".persistent",
+                "ABCCHJLLNNP",
+                "QCA-ATH11K-BOARD",
+                "RrRrQqQpQpQoPnPnOmOlNlNkMj",
+                "_binary_bdwlan_bin_end",
+                "_binary_bdwlan_bin_size",
+                "_binary_bdwlan_bin_start",
+                "_binary_tempDir_bdwlan01_b0a_end",
+                "_binary_tempDir_bdwlan01_b0a_size",
+                "_binary_tempDir_bdwlan01_b0a_start",
+                "_binary_tempDir_bdwlan01g_b0a_end",
+                "_binary_tempDir_bdwlan01g_b0a_size"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6698AQ",
+        "official_cpe_product": "qca6698aq_firmware",
+        "source_file": "m3.bin",
+        "signatures": {
+            "critical": [
+                "m3.bin",
+                "WLAN_UCODE_HASTINGSPRIME_4.0.4-00000",
+                "QCA6698AQ"
+            ],
+            "optional": [
+                "#edpd_isr>edpd_chunks,Vreg",
+                "BF_PARAMS_COMMON_FORCE_CRASH",
+                "BF_PARAMS_USER_FORCE_CRASH",
+                "BF_WT_NOT_READY_FORCE_CRASH",
+                "CRASH_IBF_STR_PKT_END",
+                "CRASH_PREFET0",
+                "CRASH_PREFET1",
+                "CRASH_PREFET3",
+                "CRSH:TXFDhung",
+                "DB:Force crash at PktEnd",
+                "DC_SUB_ACTIVE_NOT_VALID",
+                "DF CfgDCN:invld ch_bw"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6390",
+        "official_cpe_product": "qca6390_firmware",
+        "source_file": "amss.bin",
+        "signatures": {
+            "critical": [
+                "QCA6390",
+                "amss.bin",
+                "QC_IMAGE_VERSION_STRING=WLAN.HST.1.0.1-05266-QCAHSTSWPLZ_V2_TO_X86-1",
+                "QURT Kernel ver.: 03.00.21.06.04.00.01"
+            ],
+            "optional": [
+                "WAL_PM_ARB_REQ_ID_HW_DTIM_CLIENT",
+                "WAL_PM_ARB_REQ_ID_PARTIAL_AWAKE_CLIENT",
+                "WAL_PM_ARB_REQ_ID_SW_DTIM_CLIENT",
+                "WAL_PM_ARB_REQ_ID_WAL_CLIENT",
+                "WAL_PM_ARB_REQ_ID_WLAN_PM_ARB",
+                "WAL_PM_ARB_REQ_ID_WOW_CLIENT",
+                "WLAN_OFFLOADS",
+                "WLAN_SCHED0",
+                "WLAN_SCHED1",
+                "WLAN_TX_COMPL1",
+                "WLAN_TX_DE",
+                "mhi_core_isr: Cannot mask interrupts, mhi link hw disabled",
+                "mhi_core_isr: MHI_SYS_ERR triggered by Host",
+                "mhi_core_process_ring_cb: put ring id %d on completeRingQ",
+                "mhi_core_process_ring_cb: ring linkReqQ is empty"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6390",
+        "official_cpe_product": "qca6390_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "QCA6390",
+                "board-2.bin"
+            ],
+            "optional": [
+                "QCA-ATH11K-BOARD",
+                "_binary_bdwlan_bin_end",
+                "_binary_bdwlan_bin_size",
+                "_binary_bdwlan_bin_start",
+                "_binary_tempDir_bdwlan_b04_end",
+                "_binary_tempDir_bdwlan_b04_size",
+                "_binary_tempDir_bdwlan_b04_start",
+                "bus=pci,qmi-chip-id=0,qmi-board-id=255,variant=Xiaomi_Pad_5Pro_5Gmmm",
+                "bus=pci,qmi-chip-id=0,qmi-board-id=255,variant=Xiaomi_Pad_5Promm"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA6390",
+        "official_cpe_product": "qca6390_firmware",
+        "source_file": "m3.bin",
+        "signatures": {
+            "critical": [
+                "QCA6390",
+                "WLAN_UCODE_HASTINGS_2.0.7-00009",
+                "m3.bin"
+            ],
+            "optional": [
+                "%rxtd_sw.cpp",
+                "DB:Force crash at PktEnd",
+                "DF CfgDCN:invld ch_bw",
+                "DF:DMA d_addr not 64b align",
+                "DF:inv dma_desc_pbs_ sz",
+                "DF:inv he_ltf_mode",
+                "DF:inv pbs pw_mode",
+                "DF:mu_user_pos==255",
+                "DF:mu_user_pos==255-2",
+                "DFS: Inv dst_addr",
+                "ERR:ABORT_ACK missing",
+                "ERR_DEMF_INV_RU_TYPE_CFG_RU"
+            ]
+        }
+    },
+    {
+        "chipset": "IPQ6018",
+        "official_cpe_product": "ipq6018_firmware",
+        "source_file": "board-2.bin",
+        "signatures": {
+            "critical": [
+                "board-2.bin",
+                "IPQ6018"
+            ],
+            "optional": [
+                "QCA-ATH11K-BOARD"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA2066",
+        "official_cpe_product": "qca2066_firmware",
+        "source_file": "nvm_usb_00130201_gf_030a.bin",
+        "signatures": {
+            "critical": [
+                "BTFW.HSP.2.1.0-00653-VER_PATCHZ-3",
+                "nvm_usb_00130201_gf_030a.bin",
+                "QCA2066"
+            ],
+            "optional": []
+        }
+    },
+    {
+        "chipset": "QCA2066",
+        "official_cpe_product": "qca2066_firmware",
+        "source_file": "rampatch_usb_00130201.bin",
+        "signatures": {
+            "critical": [
+                "BTFW.HSP.2.1.0-00653-VER_PATCHZ-3",
+                "rampatch_usb_00130201.bin",
+                "Patch Release PF=QCA6490ROM= 0201 BUILD=BTFW.HSP.2.1.0-00653-VER_PATCHZ-3",
+                "QCA2066"
+            ],
+            "optional": [
+                " PatchVer=0x%X SoCID=0x%8X ",
+                "+ Group duration",
+                "- Group duration",
+                "3N3hyh8F40",
+                "BIG_M Offset(ms)",
+                "CZq4!AC8h@",
+                "ConnSlotsUsed",
+                "DROPPING ISO STREAM",
+                "ERcFYhrFQA",
+                "Group duration",
+                "ISO TxRetrans",
+                "ISO: M select offset failed"
+            ]
+        }
+    },
+    {
+        "chipset": "QCA2066",
+        "official_cpe_product": "qca2066_firmware",
+        "source_file": "nvm_usb_00130201_030a.bin",
+        "signatures": {
+            "critical": [
+                "BTFW.HSP.2.1.0-00653-VER_PATCHZ-3",
+                "nvm_usb_00130201_030a.bin",
+                "QCA2066"
+            ],
+            "optional": []
+        }
+    },
+    {
+        "chipset": "QCA6698",
+        "official_cpe_product": "qca6698_firmware",
+        "source_file": "hpnv21.bin",
+        "signatures": {
+            "critical": [
+                "QCA6698",
+                "BTFW.HSP.2.1.2-00069-PATCHZ-2",
+                "hpnv21.bin"
+            ],
+            "optional": []
+        }
+    }
+]

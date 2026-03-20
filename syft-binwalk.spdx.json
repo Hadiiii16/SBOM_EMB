@@ -1,0 +1,3412 @@
+{
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "/home/ktdevice/yocto-sbom-test/fw-analysis/_core-image-base-raspberrypi4-64.wic.extracted/ext-root/",
+    "documentNamespace": "https://anchore.com/syft/dir/home/ktdevice/yocto-sbom-test/fw-analysis/_core-image-base-raspberrypi4-64.wic.extracted/ext-root-55f78c5a-2153-4690-9623-02891f56bcae",
+    "creationInfo": {
+        "licenseListVersion": "3.27",
+        "creators": [
+            "Organization: Anchore, Inc",
+            "Tool: syft-1.41.2"
+        ],
+        "created": "2026-03-03T08:14:09Z"
+    },
+    "packages": [
+        {
+            "name": "/home/ktdevice/yocto-sbom-test/fw-analysis/_core-image-base-raspberrypi4-64.wic.extracted/ext-root/",
+            "SPDXID": "SPDXRef-DocumentRoot-Directory--home-ktdevice-yocto-sbom-test-fw-analysis--core-image-base-raspberrypi4-64.wic.extracted-ext-root-",
+            "supplier": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "licenseConcluded": "NOASSERTION",
+            "licenseDeclared": "NOASSERTION",
+            "copyrightText": "NOASSERTION",
+            "primaryPackagePurpose": "FILE"
+        }
+    ],
+    "files": [
+        {
+            "fileName": "bin/busybox.nosuid",
+            "SPDXID": "SPDXRef-File-bin-busybox.nosuid-922275611d674e50",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "bin/busybox.suid",
+            "SPDXID": "SPDXRef-File-bin-busybox.suid-98156b2a5c774596",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "bin/chattr.e2fsprogs",
+            "SPDXID": "SPDXRef-File-bin-chattr.e2fsprogs-6fd251884c555389",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "bin/kmod",
+            "SPDXID": "SPDXRef-File-bin-kmod-ffa92203ccdce247",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "bin/login.shadow",
+            "SPDXID": "SPDXRef-File-bin-login.shadow-498b4fecb0108840",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "bin/lsattr.e2fsprogs",
+            "SPDXID": "SPDXRef-File-bin-lsattr.e2fsprogs-5b4711fee9d50f28",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "bin/mountpoint.sysvinit",
+            "SPDXID": "SPDXRef-File-bin-mountpoint.sysvinit-a0647806b23d1333",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "bin/su.shadow",
+            "SPDXID": "SPDXRef-File-bin-su.shadow-bf77ef6ef99a1ed3",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/ld-linux-aarch64.so.1",
+            "SPDXID": "SPDXRef-File-lib-ld-linux-aarch64.so.1-a6c6bbc4e83faa1d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libBrokenLocale.so.1",
+            "SPDXID": "SPDXRef-File-lib-libBrokenLocale.so.1-d8f8079ad01e9aa7",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libanl.so.1",
+            "SPDXID": "SPDXRef-File-lib-libanl.so.1-dc5883c09cbf23d7",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libblkid.so.1.1.0",
+            "SPDXID": "SPDXRef-File-lib-libblkid.so.1.1.0-46714210af6a6638",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libc.so.6",
+            "SPDXID": "SPDXRef-File-lib-libc.so.6-99fcad268b5c3e60",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libcap.so.2.66",
+            "SPDXID": "SPDXRef-File-lib-libcap.so.2.66-a69a4f87106ee004",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libcom_err.so.2.1",
+            "SPDXID": "SPDXRef-File-lib-libcom-err.so.2.1-4d87c39b42bc5bad",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libdl.so.2",
+            "SPDXID": "SPDXRef-File-lib-libdl.so.2-34ed6a1b31e8cec2",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libe2p.so.2.3",
+            "SPDXID": "SPDXRef-File-lib-libe2p.so.2.3-a2812196cad65a38",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libext2fs.so.2.4",
+            "SPDXID": "SPDXRef-File-lib-libext2fs.so.2.4-7a99981706c39ad7",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libm.so.6",
+            "SPDXID": "SPDXRef-File-lib-libm.so.6-f0a7f5df789b1696",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libmount.so.1.1.0",
+            "SPDXID": "SPDXRef-File-lib-libmount.so.1.1.0-6bcd0889f539970f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnsl.so.1",
+            "SPDXID": "SPDXRef-File-lib-libnsl.so.1-739058fe6eb4c747",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnss_compat.so.2",
+            "SPDXID": "SPDXRef-File-lib-libnss-compat.so.2-0d546834d7e5ca11",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnss_dns.so.2",
+            "SPDXID": "SPDXRef-File-lib-libnss-dns.so.2-7c34e03f01eaf7ac",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnss_files.so.2",
+            "SPDXID": "SPDXRef-File-lib-libnss-files.so.2-9b538f2b1ea9ec6e",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnss_mdns.so.2",
+            "SPDXID": "SPDXRef-File-lib-libnss-mdns.so.2-a86e885e3bf9cb00",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnss_mdns4.so.2",
+            "SPDXID": "SPDXRef-File-lib-libnss-mdns4.so.2-25ee5b6f8c6f2c12",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnss_mdns4_minimal.so.2",
+            "SPDXID": "SPDXRef-File-lib-libnss-mdns4-minimal.so.2-1226184f16d1b4ed",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnss_mdns6.so.2",
+            "SPDXID": "SPDXRef-File-lib-libnss-mdns6.so.2-89d6fd134e57c6cc",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnss_mdns6_minimal.so.2",
+            "SPDXID": "SPDXRef-File-lib-libnss-mdns6-minimal.so.2-df33581e3bebcdaa",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libnss_mdns_minimal.so.2",
+            "SPDXID": "SPDXRef-File-lib-libnss-mdns-minimal.so.2-b069f7f25cbadf99",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libpthread.so.0",
+            "SPDXID": "SPDXRef-File-lib-libpthread.so.0-e24e5d01d5a34007",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libresolv.so.2",
+            "SPDXID": "SPDXRef-File-lib-libresolv.so.2-543190a03f04dfdd",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/librt.so.1",
+            "SPDXID": "SPDXRef-File-lib-librt.so.1-91049698ef7f8254",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libss.so.2.0",
+            "SPDXID": "SPDXRef-File-lib-libss.so.2.0-adbd3893d9a91091",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libtinfo.so.5.9",
+            "SPDXID": "SPDXRef-File-lib-libtinfo.so.5.9-ce5839972a7beea9",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libudev.so.1.6.3",
+            "SPDXID": "SPDXRef-File-lib-libudev.so.1.6.3-2e8c4368d1d384f1",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libusb-1.0.so.0.3.0",
+            "SPDXID": "SPDXRef-File-lib-libusb-1.0.so.0.3.0-26b8ae28429de83e",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libutil.so.1",
+            "SPDXID": "SPDXRef-File-lib-libutil.so.1-26c0be84dc0d5255",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/libz.so.1.2.11",
+            "SPDXID": "SPDXRef-File-lib-libz.so.1.2.11-3be0b52da346306f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/udev/ata_id",
+            "SPDXID": "SPDXRef-File-lib-udev-ata-id-b8d0461291bc81f8",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/udev/cdrom_id",
+            "SPDXID": "SPDXRef-File-lib-udev-cdrom-id-4e217c9c9122c5a8",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/udev/collect",
+            "SPDXID": "SPDXRef-File-lib-udev-collect-dc37dfe3ab58e632",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/udev/mtd_probe",
+            "SPDXID": "SPDXRef-File-lib-udev-mtd-probe-35a6f0fe0a65c662",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/udev/scsi_id",
+            "SPDXID": "SPDXRef-File-lib-udev-scsi-id-eb662a6bdc28d5fd",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "lib/udev/v4l_id",
+            "SPDXID": "SPDXRef-File-lib-udev-v4l-id-949072d546d15fb2",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/badblocks",
+            "SPDXID": "SPDXRef-File-sbin-badblocks-5b9b370e23951ca5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/bootlogd",
+            "SPDXID": "SPDXRef-File-sbin-bootlogd-daddaf1e950ef640",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/debugfs",
+            "SPDXID": "SPDXRef-File-sbin-debugfs-564bb6eb980b7b48",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/dumpe2fs",
+            "SPDXID": "SPDXRef-File-sbin-dumpe2fs-279d9d9d7d199027",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/e2freefrag",
+            "SPDXID": "SPDXRef-File-sbin-e2freefrag-8a6623adae6df334",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/e2fsck",
+            "SPDXID": "SPDXRef-File-sbin-e2fsck-31867872586974f5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/e2image",
+            "SPDXID": "SPDXRef-File-sbin-e2image-f1232d1ea2fd0219",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/e2mmpstatus",
+            "SPDXID": "SPDXRef-File-sbin-e2mmpstatus-a4e762d23d302c39",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/e2undo",
+            "SPDXID": "SPDXRef-File-sbin-e2undo-4424c3ce0f9449b1",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/e4crypt",
+            "SPDXID": "SPDXRef-File-sbin-e4crypt-e2247ab76baf8078",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/e4defrag",
+            "SPDXID": "SPDXRef-File-sbin-e4defrag-100c23fe8139b1ba",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/filefrag",
+            "SPDXID": "SPDXRef-File-sbin-filefrag-7c6a9c8fbad2747c",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/fsck.ext2",
+            "SPDXID": "SPDXRef-File-sbin-fsck.ext2-96fe727ddc87d05f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/fsck.ext3",
+            "SPDXID": "SPDXRef-File-sbin-fsck.ext3-2be84878a3f37235",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/fsck.ext4",
+            "SPDXID": "SPDXRef-File-sbin-fsck.ext4-b1759343cc95d2c2",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/fstab-decode",
+            "SPDXID": "SPDXRef-File-sbin-fstab-decode-df3201eea6a33076",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/halt.sysvinit",
+            "SPDXID": "SPDXRef-File-sbin-halt.sysvinit-9b012ddd59913c3d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/hdparm.hdparm",
+            "SPDXID": "SPDXRef-File-sbin-hdparm.hdparm-f1d89c957c98ffae",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/init.sysvinit",
+            "SPDXID": "SPDXRef-File-sbin-init.sysvinit-3c84cb8c8222e14d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/killall5",
+            "SPDXID": "SPDXRef-File-sbin-killall5-888d92488c7d85c7",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/ldconfig",
+            "SPDXID": "SPDXRef-File-sbin-ldconfig-91bbdbc93d4f817f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/logsave",
+            "SPDXID": "SPDXRef-File-sbin-logsave-b3f2b5b2db0266d5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/mke2fs.e2fsprogs",
+            "SPDXID": "SPDXRef-File-sbin-mke2fs.e2fsprogs-e81e3404f0c32aca",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/mkfs.ext2.e2fsprogs",
+            "SPDXID": "SPDXRef-File-sbin-mkfs.ext2.e2fsprogs-b9adbde2f4e6a18d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/mkfs.ext3",
+            "SPDXID": "SPDXRef-File-sbin-mkfs.ext3-82dda0c51b05e695",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/mkfs.ext4",
+            "SPDXID": "SPDXRef-File-sbin-mkfs.ext4-6950a5bada95442b",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/mklost+found",
+            "SPDXID": "SPDXRef-File-sbin-mklost-found-e207e5d272357940",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/nologin.shadow",
+            "SPDXID": "SPDXRef-File-sbin-nologin.shadow-db15959f0cee2fd4",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/runlevel.sysvinit",
+            "SPDXID": "SPDXRef-File-sbin-runlevel.sysvinit-9127d6aa4adf5c16",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/shutdown.sysvinit",
+            "SPDXID": "SPDXRef-File-sbin-shutdown.sysvinit-b2fc9a9729bb9cd3",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/sulogin.util-linux",
+            "SPDXID": "SPDXRef-File-sbin-sulogin.util-linux-fcdd34d1e1160797",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/udevd",
+            "SPDXID": "SPDXRef-File-sbin-udevd-b675cae639e62923",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "sbin/vipw.shadow",
+            "SPDXID": "SPDXRef-File-sbin-vipw.shadow-3be7f2fffa4b525b",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/amixer",
+            "SPDXID": "SPDXRef-File-usr-bin-amixer-33a6b5f62851add9",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/apm",
+            "SPDXID": "SPDXRef-File-usr-bin-apm-674548529103cd61",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/bluemoon",
+            "SPDXID": "SPDXRef-File-usr-bin-bluemoon-c3f9e64e52460dd2",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/bluetoothctl",
+            "SPDXID": "SPDXRef-File-usr-bin-bluetoothctl-659b8862f117203a",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/btattach",
+            "SPDXID": "SPDXRef-File-usr-bin-btattach-64de32b061842b74",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/btmon",
+            "SPDXID": "SPDXRef-File-usr-bin-btmon-aea8d2c37c539201",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/chage",
+            "SPDXID": "SPDXRef-File-usr-bin-chage-a1ad809a47f9dd5c",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/chfn.shadow",
+            "SPDXID": "SPDXRef-File-usr-bin-chfn.shadow-cec521a71b536a67",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/chsh.shadow",
+            "SPDXID": "SPDXRef-File-usr-bin-chsh.shadow-989ab2499537894d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/chvt.kbd",
+            "SPDXID": "SPDXRef-File-usr-bin-chvt.kbd-ffb0a42ee3454ac5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/ciptool",
+            "SPDXID": "SPDXRef-File-usr-bin-ciptool-2e8cf151387f5a0d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/dbus-cleanup-sockets",
+            "SPDXID": "SPDXRef-File-usr-bin-dbus-cleanup-sockets-f451e73d683d3fb5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/dbus-daemon",
+            "SPDXID": "SPDXRef-File-usr-bin-dbus-daemon-b7968f0824fbbd79",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/dbus-launch",
+            "SPDXID": "SPDXRef-File-usr-bin-dbus-launch-b113dc39e95821c6",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/dbus-monitor",
+            "SPDXID": "SPDXRef-File-usr-bin-dbus-monitor-b1ef6a79dd6dd82f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/dbus-run-session",
+            "SPDXID": "SPDXRef-File-usr-bin-dbus-run-session-7f7ed09a8c393cb2",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/dbus-send",
+            "SPDXID": "SPDXRef-File-usr-bin-dbus-send-27c878a6b66c2843",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/dbus-update-activation-environment",
+            "SPDXID": "SPDXRef-File-...bin-dbus-update-activation-environment-cc7dd70ea9bd1203",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/dbus-uuidgen",
+            "SPDXID": "SPDXRef-File-usr-bin-dbus-uuidgen-517a8972ecded70c",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/deallocvt.kbd",
+            "SPDXID": "SPDXRef-File-usr-bin-deallocvt.kbd-62221f464ef2a9bd",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/dumpkeys",
+            "SPDXID": "SPDXRef-File-usr-bin-dumpkeys-6cde90174829589f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/expiry",
+            "SPDXID": "SPDXRef-File-usr-bin-expiry-5dd2d32de03664ae",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/faillog",
+            "SPDXID": "SPDXRef-File-usr-bin-faillog-ba36c4d7e0a45f97",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/fgconsole.kbd",
+            "SPDXID": "SPDXRef-File-usr-bin-fgconsole.kbd-fc488e1aa661a643",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/getkeycodes",
+            "SPDXID": "SPDXRef-File-usr-bin-getkeycodes-f562b619b2005a7a",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/getsubids",
+            "SPDXID": "SPDXRef-File-usr-bin-getsubids-42f2fcbf3594d385",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/gpasswd",
+            "SPDXID": "SPDXRef-File-usr-bin-gpasswd-03b8be8fb93f88de",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/groups.shadow",
+            "SPDXID": "SPDXRef-File-usr-bin-groups.shadow-c5c0cd63c87ba509",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/hciattach",
+            "SPDXID": "SPDXRef-File-usr-bin-hciattach-12981fe8952f0d6d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/hciconfig",
+            "SPDXID": "SPDXRef-File-usr-bin-hciconfig-e72136226e69d5d7",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/hcidump",
+            "SPDXID": "SPDXRef-File-usr-bin-hcidump-97f723d09af6fae0",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/hcitool",
+            "SPDXID": "SPDXRef-File-usr-bin-hcitool-da3eb759c63d1936",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/hex2hcd",
+            "SPDXID": "SPDXRef-File-usr-bin-hex2hcd-57b1e4c209b886d5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/isotest",
+            "SPDXID": "SPDXRef-File-usr-bin-isotest-0ae239b9cbf5e549",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/kbd_mode",
+            "SPDXID": "SPDXRef-File-usr-bin-kbd-mode-14ff9f9652c8f689",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/kbdinfo",
+            "SPDXID": "SPDXRef-File-usr-bin-kbdinfo-b1cca2d2b37716ec",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/kbdrate",
+            "SPDXID": "SPDXRef-File-usr-bin-kbdrate-3b33c5bb20e5d08f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/l2ping",
+            "SPDXID": "SPDXRef-File-usr-bin-l2ping-0aa640fc05cf6072",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/l2test",
+            "SPDXID": "SPDXRef-File-usr-bin-l2test-2dec93ce33e9be28",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/last.sysvinit",
+            "SPDXID": "SPDXRef-File-usr-bin-last.sysvinit-8afd6c10a9c639ce",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/lastlog",
+            "SPDXID": "SPDXRef-File-usr-bin-lastlog-2e2340733b9d0805",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/loadkeys",
+            "SPDXID": "SPDXRef-File-usr-bin-loadkeys-4c87e39c88c8252f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/loadunimap",
+            "SPDXID": "SPDXRef-File-usr-bin-loadunimap-6369837124a6cf9a",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/lsusb.usbutils",
+            "SPDXID": "SPDXRef-File-usr-bin-lsusb.usbutils-6f22c887397a574d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/mapscrn",
+            "SPDXID": "SPDXRef-File-usr-bin-mapscrn-55bc1c42cd561d05",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/mesg.sysvinit",
+            "SPDXID": "SPDXRef-File-usr-bin-mesg.sysvinit-73bb910ed97fc1ea",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/mpris-proxy",
+            "SPDXID": "SPDXRef-File-usr-bin-mpris-proxy-f49bf3aad44f0df6",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/nciattach",
+            "SPDXID": "SPDXRef-File-usr-bin-nciattach-9bde21c07456bd53",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/newgidmap",
+            "SPDXID": "SPDXRef-File-usr-bin-newgidmap-7089e5fd217b447d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/newgrp.shadow",
+            "SPDXID": "SPDXRef-File-usr-bin-newgrp.shadow-e04e96b747306391",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/newuidmap",
+            "SPDXID": "SPDXRef-File-usr-bin-newuidmap-3219ff97ede2ce71",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/nfctool",
+            "SPDXID": "SPDXRef-File-usr-bin-nfctool-23a77218e2caca56",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/openvt.kbd",
+            "SPDXID": "SPDXRef-File-usr-bin-openvt.kbd-041a619a536c40a7",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/passwd.shadow",
+            "SPDXID": "SPDXRef-File-usr-bin-passwd.shadow-492beeca14e80c52",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/psfxtable",
+            "SPDXID": "SPDXRef-File-usr-bin-psfxtable-1650dc973f072b7f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/psplash-raspberrypi",
+            "SPDXID": "SPDXRef-File-usr-bin-psplash-raspberrypi-47b1b625a6c1d95d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/psplash-write",
+            "SPDXID": "SPDXRef-File-usr-bin-psplash-write-04ec379dc35477c7",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/rctest",
+            "SPDXID": "SPDXRef-File-usr-bin-rctest-420019293bb341d0",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/readbootlog",
+            "SPDXID": "SPDXRef-File-usr-bin-readbootlog-80b16d8cb618385c",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/rfcomm",
+            "SPDXID": "SPDXRef-File-usr-bin-rfcomm-12e6b7f489b72d20",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/rpcinfo.rpcbind",
+            "SPDXID": "SPDXRef-File-usr-bin-rpcinfo.rpcbind-00b43a8477562cca",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/sdptool",
+            "SPDXID": "SPDXRef-File-usr-bin-sdptool-ddc63f092594d45d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/setfont",
+            "SPDXID": "SPDXRef-File-usr-bin-setfont-9e5ca2d7bc67de26",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/setkeycodes",
+            "SPDXID": "SPDXRef-File-usr-bin-setkeycodes-95acd24c2abfb0ed",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/setleds",
+            "SPDXID": "SPDXRef-File-usr-bin-setleds-d3afbc475baebfa5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/setmetamode",
+            "SPDXID": "SPDXRef-File-usr-bin-setmetamode-05adf559beccd9b1",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/setvtrgb",
+            "SPDXID": "SPDXRef-File-usr-bin-setvtrgb-fa935424a265d161",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/showconsolefont",
+            "SPDXID": "SPDXRef-File-usr-bin-showconsolefont-8b76869e85fd5167",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/showkey.kbd",
+            "SPDXID": "SPDXRef-File-usr-bin-showkey.kbd-39699173bd79ddd5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/udevadm",
+            "SPDXID": "SPDXRef-File-usr-bin-udevadm-32dd8fdfedbcf016",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/update-mime-database",
+            "SPDXID": "SPDXRef-File-usr-bin-update-mime-database-b13679a36a0a7dfc",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/usbhid-dump",
+            "SPDXID": "SPDXRef-File-usr-bin-usbhid-dump-a0f37b3a7452cf01",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/utmpdump.sysvinit",
+            "SPDXID": "SPDXRef-File-usr-bin-utmpdump.sysvinit-2977287576646f1e",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/wall.sysvinit",
+            "SPDXID": "SPDXRef-File-usr-bin-wall.sysvinit-49362bc6351f0e8d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/bin/wpa_passphrase",
+            "SPDXID": "SPDXRef-File-usr-bin-wpa-passphrase-27498db4b61ec04e",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/e2initrd_helper",
+            "SPDXID": "SPDXRef-File-usr-lib-e2initrd-helper-8aedd720832224d5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libX11.so.6.4.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libX11.so.6.4.0-5589148e7615b661",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libXau.so.6.0.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libXau.so.6.0.0-ff3f2ab95049927c",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libXdmcp.so.6.0.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libXdmcp.so.6.0.0-76b813b78c59d15f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libapm.so.1.0.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libapm.so.1.0.0-35b0fa19107570f0",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libasound.so.2.0.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libasound.so.2.0.0-7791575913a43924",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libattr.so.1.1.2501",
+            "SPDXID": "SPDXRef-File-usr-lib-libattr.so.1.1.2501-34c053587b50917b",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libavahi-common.so.3.5.4",
+            "SPDXID": "SPDXRef-File-usr-lib-libavahi-common.so.3.5.4-64c3e3f033fc5d34",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libavahi-core.so.7.1.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libavahi-core.so.7.1.0-eb21b32bb5c87ff7",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libbluetooth.so.3.19.7",
+            "SPDXID": "SPDXRef-File-usr-lib-libbluetooth.so.3.19.7-3ccd9b940505544d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libcrypt.so.2.0.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libcrypt.so.2.0.0-d7a73b0c826ec494",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libcrypto.so.3",
+            "SPDXID": "SPDXRef-File-usr-lib-libcrypto.so.3-c9bb8d81799bbede",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libdaemon.so.0.5.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libdaemon.so.0.5.0-3483be33685027ec",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libdbus-1.so.3.32.3",
+            "SPDXID": "SPDXRef-File-usr-lib-libdbus-1.so.3.32.3-969aea2851eeb3d4",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libell.so.0.0.2",
+            "SPDXID": "SPDXRef-File-usr-lib-libell.so.0.0.2-33adb11ac8718a29",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libexpat.so.1.8.10",
+            "SPDXID": "SPDXRef-File-usr-lib-libexpat.so.1.8.10-f78fde77f57fce2f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libffi.so.8.1.2",
+            "SPDXID": "SPDXRef-File-usr-lib-libffi.so.8.1.2-f441e3aeb2cc2392",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libgio-2.0.so.0.7200.3",
+            "SPDXID": "SPDXRef-File-usr-lib-libgio-2.0.so.0.7200.3-a0dcabbf1b0631fb",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libglib-2.0.so.0.7200.3",
+            "SPDXID": "SPDXRef-File-usr-lib-libglib-2.0.so.0.7200.3-4787bcbcd800ae65",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libgmodule-2.0.so.0.7200.3",
+            "SPDXID": "SPDXRef-File-usr-lib-libgmodule-2.0.so.0.7200.3-d67a920b8b8dbf99",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libgobject-2.0.so.0.7200.3",
+            "SPDXID": "SPDXRef-File-usr-lib-libgobject-2.0.so.0.7200.3-98902be539227e2f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libgthread-2.0.so.0.7200.3",
+            "SPDXID": "SPDXRef-File-usr-lib-libgthread-2.0.so.0.7200.3-5c2dcbb3f7a84f83",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libhistory.so.8.1",
+            "SPDXID": "SPDXRef-File-usr-lib-libhistory.so.8.1-3a330b1c46f89db6",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libkmod.so.2.3.7",
+            "SPDXID": "SPDXRef-File-usr-lib-libkmod.so.2.3.7-aea477f1829d2b50",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/liblzma.so.5.2.6",
+            "SPDXID": "SPDXRef-File-usr-lib-liblzma.so.5.2.6-f8839230655d5d80",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libnl-3.so.200.26.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libnl-3.so.200.26.0-ea5d665c2a2f015e",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libnl-genl-3.so.200.26.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libnl-genl-3.so.200.26.0-bee53291fc6a9d17",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libpci.so.3.7.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libpci.so.3.7.0-75be5d7af6cc53b4",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libpcre.so.1.2.13",
+            "SPDXID": "SPDXRef-File-usr-lib-libpcre.so.1.2.13-6a97fccda9bdf662",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libpsx.so.2.66",
+            "SPDXID": "SPDXRef-File-usr-lib-libpsx.so.2.66-8ab2e9b20b8980a3",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libreadline.so.8.1",
+            "SPDXID": "SPDXRef-File-usr-lib-libreadline.so.8.1-049561105ea54528",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libssl.so.3",
+            "SPDXID": "SPDXRef-File-usr-lib-libssl.so.3-f2d0cbab9e1cd559",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libsubid.so.4.0.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libsubid.so.4.0.0-6b831028af75ba7a",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libtirpc.so.3.0.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libtirpc.so.3.0.0-4fb4c69b1a88fa99",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libuuid.so.1.3.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libuuid.so.1.3.0-11d8b4b05363071b",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libxcb.so.1.1.0",
+            "SPDXID": "SPDXRef-File-usr-lib-libxcb.so.1.1.0-dd5b31e2ca838802",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/libxml2.so.2.9.14",
+            "SPDXID": "SPDXRef-File-usr-lib-libxml2.so.2.9.14-8e9f71e1a00ccc0c",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/lib/ossl-modules/legacy.so",
+            "SPDXID": "SPDXRef-File-usr-lib-ossl-modules-legacy.so-499889f7d08a11d8",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/libexec/bluetooth/bluetoothd",
+            "SPDXID": "SPDXRef-File-usr-libexec-bluetooth-bluetoothd-0b64ac086045036d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/libexec/dbus-daemon-launch-helper",
+            "SPDXID": "SPDXRef-File-usr-libexec-dbus-daemon-launch-helper-02433302d47fc05d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/libexec/gio-querymodules",
+            "SPDXID": "SPDXRef-File-usr-libexec-gio-querymodules-27842ca9219e36e1",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/libexec/nfc/neard",
+            "SPDXID": "SPDXRef-File-usr-libexec-nfc-neard-0bfc1c4d4b2240b2",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/alsactl",
+            "SPDXID": "SPDXRef-File-usr-sbin-alsactl-e60c19fc50908ead",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/apmd",
+            "SPDXID": "SPDXRef-File-usr-sbin-apmd-0e6f0886672254fa",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/avahi-daemon",
+            "SPDXID": "SPDXRef-File-usr-sbin-avahi-daemon-d17c468282c9ac1e",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/chgpasswd",
+            "SPDXID": "SPDXRef-File-usr-sbin-chgpasswd-d2bd59795f14484c",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/chpasswd.shadow",
+            "SPDXID": "SPDXRef-File-usr-sbin-chpasswd.shadow-a9a438b5acc7177a",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/fatlabel",
+            "SPDXID": "SPDXRef-File-usr-sbin-fatlabel-609cf2cac0de3457",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/fsck.fat",
+            "SPDXID": "SPDXRef-File-usr-sbin-fsck.fat-90ceb6d2cae94b4d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/groupadd",
+            "SPDXID": "SPDXRef-File-usr-sbin-groupadd-46cf7769255b451a",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/groupdel",
+            "SPDXID": "SPDXRef-File-usr-sbin-groupdel-1c4a1f7d7dbe939b",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/groupmems",
+            "SPDXID": "SPDXRef-File-usr-sbin-groupmems-d64555a64c54e366",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/groupmod",
+            "SPDXID": "SPDXRef-File-usr-sbin-groupmod-38c6cfdf30d1fa43",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/grpck",
+            "SPDXID": "SPDXRef-File-usr-sbin-grpck-236757ba298ab17f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/grpconv",
+            "SPDXID": "SPDXRef-File-usr-sbin-grpconv-ed9d7d9b19fd14e5",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/grpunconv",
+            "SPDXID": "SPDXRef-File-usr-sbin-grpunconv-937523b74010a7e9",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/iw",
+            "SPDXID": "SPDXRef-File-usr-sbin-iw-4c626d9a65a50e4a",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/logoutd",
+            "SPDXID": "SPDXRef-File-usr-sbin-logoutd-7baacd477a4480b2",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/lspci",
+            "SPDXID": "SPDXRef-File-usr-sbin-lspci-be73df4aecb1b7a1",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/mkfs.fat",
+            "SPDXID": "SPDXRef-File-usr-sbin-mkfs.fat-e53bb12149f8a203",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/newusers",
+            "SPDXID": "SPDXRef-File-usr-sbin-newusers-adca9627843feb18",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/ofonod",
+            "SPDXID": "SPDXRef-File-usr-sbin-ofonod-396d9f962c8d3dde",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/pwck",
+            "SPDXID": "SPDXRef-File-usr-sbin-pwck-90345680af548f61",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/pwconv",
+            "SPDXID": "SPDXRef-File-usr-sbin-pwconv-a031dfdf343a27ca",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/pwunconv",
+            "SPDXID": "SPDXRef-File-usr-sbin-pwunconv-be6910c29794aa28",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/rpcbind",
+            "SPDXID": "SPDXRef-File-usr-sbin-rpcbind-98169b3963b58131",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/setpci",
+            "SPDXID": "SPDXRef-File-usr-sbin-setpci-f9a4edc83f756348",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/useradd",
+            "SPDXID": "SPDXRef-File-usr-sbin-useradd-0ad6be444ec1bb0e",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/userdel",
+            "SPDXID": "SPDXRef-File-usr-sbin-userdel-1c5574fac9f46a34",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/usermod",
+            "SPDXID": "SPDXRef-File-usr-sbin-usermod-6369fbe035c77c1d",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/wpa_cli",
+            "SPDXID": "SPDXRef-File-usr-sbin-wpa-cli-5ff40bf7f3b79571",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        },
+        {
+            "fileName": "usr/sbin/wpa_supplicant",
+            "SPDXID": "SPDXRef-File-usr-sbin-wpa-supplicant-54a30f277169919f",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0000000000000000000000000000000000000000"
+                }
+            ],
+            "licenseConcluded": "NOASSERTION",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ],
+            "copyrightText": "NOASSERTION"
+        }
+    ],
+    "relationships": [
+        {
+            "spdxElementId": "SPDXRef-DOCUMENT",
+            "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory--home-ktdevice-yocto-sbom-test-fw-analysis--core-image-base-raspberrypi4-64.wic.extracted-ext-root-",
+            "relationshipType": "DESCRIBES"
+        }
+    ]
+}

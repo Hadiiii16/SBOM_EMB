@@ -666,6 +666,16 @@ catalogers:
             type: BinaryPkg
       - method: glob
         criteria:
+          - '**/qca_ol.ko'
+        packages:
+          - class: qualcomm-wlan-driver
+            name: qca-wifi-driver
+            purl: pkg:generic/qualcomm/qca-wifi
+            cpes:
+              - cpe:2.3:a:qualcomm:qca_ol:*:*:*:*:*:*:*:*
+            type: BinaryPkg
+      - method: glob
+        criteria:
           - '**/java'
         packages:
           - class: java-binary
